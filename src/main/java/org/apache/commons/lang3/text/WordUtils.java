@@ -109,7 +109,7 @@ public class WordUtils {
      * <table border="1" summary="Wrap Results">
      *  <tr>
      *   <th>input</th>
-     *   <th>wrapLenght</th>
+     *   <th>wrapLength</th>
      *   <th>newLineString</th>
      *   <th>wrapLongWords</th>
      *   <th>result</th>
@@ -185,7 +185,7 @@ public class WordUtils {
      * <table border="1" summary="Wrap Results">
      *  <tr>
      *   <th>input</th>
-     *   <th>wrapLenght</th>
+     *   <th>wrapLength</th>
      *   <th>newLineString</th>
      *   <th>wrapLongWords</th>
      *   <th>wrapOn</th>
@@ -291,7 +291,7 @@ public class WordUtils {
                     offset += matcher.end();
                     continue;
                 }else {
-                    spaceToWrapAt = matcher.start();
+                    spaceToWrapAt = matcher.start() + offset;
                 }
             }
 
